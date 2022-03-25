@@ -1,6 +1,7 @@
+// 3.import the http, then use the http to process the axios request
 import http from '../http-common'
 
-class RestaurantDataService {
+class RestaurantDataService {//class function
     getAll(page = 0) {
         return http.get(`restaurants?page=${page}`);
     }

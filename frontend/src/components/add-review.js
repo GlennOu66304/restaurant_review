@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// 4.import the axios request file
 import RestaurantDataService from "../service/restaurant";
 import { Link } from "react-router-dom";
 
@@ -29,6 +30,7 @@ const AddReview = props => {
 
         if (editing) {
             data.review_id = props.location.state.currentReview._id
+            // 5.use the axios request in the real section.
             RestaurantDataService.updateReview(data)
                 .then(response => {
                     setSubmitted(true);
