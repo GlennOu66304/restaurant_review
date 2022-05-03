@@ -1,4 +1,7 @@
 # restaurant_review
+DAO(Data as an Object):mongodb database process --> conttroler:send the data back the front end (restaurants.route.js)-- > routes
+
+
 
 ## Run the demon
 

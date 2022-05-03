@@ -9,6 +9,8 @@ dotenv.config()
 const MongoClient = mongodb.MongoClient;
 const port = process.env.PORT || 8000
 
+// connect the mongodb database
+
 MongoClient.connect(process.env.MONGO_URL, {
     poolSize: 50,
     wtimeout: 2500,
